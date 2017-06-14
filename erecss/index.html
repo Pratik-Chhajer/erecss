@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Erecss Live</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container email_box" align="center">
+	<form class="form-inline">
+		<div class="form-group">
+			<input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+    	</div>
+    	<button type="button" id="email_button" class="btn btn-info btn-mg">Submit</button>
+	</form>
+</div>
+
+<div class="modal fade" id="myModal" role="dialog" data-keyboard="false" data-backdrop="static">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div id="form_contnent">
+				<div class="modal-header">
+					<!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+					<h4 class="modal-title">Fill me!!</h4>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="row" align="center">
+							<div class="col-sm-3" align="center">
+								<label>Select Days :</label>
+								<div class="form-group">
+									<select name="cars" multiple size="7">
+										<option value="Sunday">Sunday</option>
+										<option value="Monday">Monday</option>
+										<option value="Tuesday">Tuesday</option>
+										<option value="Wednesday">Wednesday</option>
+										<option value="Thrushday">Thrushday</option>
+										<option value="Friday">Friday</option>
+										<option value="Saturday">saturday</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-3" align="center">
+							<label>Select Time :</label>
+								<div class="form-group">
+									<select name="cars" multiple size="7">
+										<option value="1">01:00 AM</option>
+										<option value="2">02:00 AM</option>
+										<option value="3">03:00 AM</option>
+										<option value="4">04:00 AM</option>
+										<option value="5">05:00 AM</option>
+										<option value="6">06:00 AM</option>
+										<option value="7">07:00 AM</option>
+										<option value="8">08:00 AM</option>
+										<option value="9">09:00 AM</option>
+										<option value="10">10:00 AM</option>
+										<option value="11">11:00 AM</option>
+										<option value="12">12:00 AM</option>
+										<option value="13">01:00 PM</option>
+										<option value="14">02:00 PM</option>
+										<option value="15">03:00 PM</option>
+										<option value="16">04:00 PM</option>
+										<option value="17">05:00 PM</option>
+										<option value="18">06:00 PM</option>
+										<option value="19">07:00 PM</option>
+										<option value="20">08:00 PM</option>
+										<option value="21">09:00 PM</option>
+										<option value="22">10:00 PM</option>
+										<option value="23">11:00 PM</option>
+										<option value="24">12:00 PM</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="row" align="center">
+							<div class="col-sm-4" align="center">
+								<div class="form-group">
+									<input type="checkbox" id="isC1Selected"/>India
+								</div>
+								<div id="category_1" style="display:none">
+									<select id="c1" multiple="multiple" size="2">
+										<option value="Delhi">Delhi</option>
+										<option value="Mumbai">Mumbai</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-4" align="center">
+								<div class="form-group">
+									<input type="checkbox" id="isC2Selected"/>USA
+								</div>
+								<div id="category_2" style="display:none">
+									<select id="c2" multiple="multiple" size="2">
+										<option value="New York">New York</option>
+										<option value="Las Vegas">Las Vegas</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-4" align="center">
+								<div class="form-group">
+									<input type="checkbox" id="isC3Selected"/>Spain
+								</div>
+								<div id="category_3" style="display:none">
+									<select id="c3" multiple="multiple" size="2">
+										<option value="Toronto">Toronto</option>
+										<option value="Madrid">Madrid</option>
+									</select>
+								</div>
+							</div>
+						</div>	
+						
+
+					<button id="submit_button" class="btn btn-info btn-mg" data-dismiss="modal">Submit</button> &nbsp;
+					<!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="js/index.js"></script>
+
+</body>
+</html>
